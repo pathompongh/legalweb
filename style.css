@@ -390,7 +390,7 @@ p {
 	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 50px 20px;
+	padding: 80px 20px;
 }
 #about .col-left {
 	width: 250px;
@@ -438,6 +438,7 @@ p {
 	max-width: 1200px;
 	margin: 0 auto;
 	width: 90%;
+	padding-top: 80px;
 }
 #contact .contact-items {
 	/* max-width: 400px; */
