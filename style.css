@@ -59,7 +59,24 @@ p {
 	margin-top: 30px;
 	transition: 0.3s ease;
 	transition-property: background-color, color;
+	
 }
+.cta:after {
+	display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid rgb(30,144,255);
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	margin-top: 30px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+	animation: cta_puls 1s ease infinite;
+	
+}
+
 .cta:hover {
 	color: white;
 	background-color: rgb(30,144,255);
@@ -547,6 +564,17 @@ p {
 		transform: scale(1.4);
 	}
 }
+@keyframes cta_puls{
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.2);
+}
+}
+
 @keyframes text_reveal_box {
 	50% {
 		width: 100%;
@@ -570,6 +598,27 @@ p {
 }
 /* End Keyframes */
 
+/* Media Query For smartphone */
+@media only screen and (max-width: 768px) {
+	.brand h1 {
+		font-size: 2.5rem;
+		text-transform: uppercase;
+		color: white;
+	}
+	
+	h1.section-title {
+		font-size: 6rem;
+	}
+
+	/* home */
+	#home h1 {
+		font-size: 2.5rem;
+	}
+	/* End home */
+
+	/* End contact  */
+}
+
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
 	.cta {
@@ -582,7 +631,7 @@ p {
 
 	/* home */
 	#home h1 {
-		font-size: 2.5rem;
+		font-size: 5rem;
 	}
 	/* End home */
 
@@ -674,6 +723,8 @@ p {
 	/* End contact  */
 }
 /* End Media Query For Tablet */
+
+
 
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
