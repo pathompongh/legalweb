@@ -576,7 +576,10 @@ p {
 	}
     #home h1:nth-child(3){
 		font-size:3rem ;
-
+	}
+	.cta {
+		font-size: 2.5rem;
+		padding: 20px 35px;
 	}
 	/* home */
 	#home h1 {
